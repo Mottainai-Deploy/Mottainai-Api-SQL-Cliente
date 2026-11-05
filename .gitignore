@@ -9,3 +9,6 @@ target/
 .settings/
 .vscode/
 *.log
+/.env
+/.env.*
+!/.env.example
