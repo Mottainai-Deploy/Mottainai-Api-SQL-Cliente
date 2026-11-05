@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: mottainai-client-api
+    runtime: docker
+    plan: free
+    autoDeployTrigger: "off"
+    envVars:
+      - key: SERVER_PORT
+        value: "10000"
+      - key: CLIENT_NOTIFICATIONS_ENABLED
+        value: "false"
+      - key: CUSTOMER_NOTIFICATION_DISPATCH_ENABLED
+        value: "false"
+      - key: CUSTOMER_NOTIFICATION_ALLOW_INSECURE
+        value: "false"
+      - key: DB_URL
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_ISSUER
+        sync: false
+      - key: CUSTOMER_DATA_ENCRYPTION_KEY
+        sync: false
+      - key: CUSTOMER_DATA_KEY_VERSION
+        sync: false
+      - key: STAFF_DATA_ENCRYPTION_KEY
+        sync: false

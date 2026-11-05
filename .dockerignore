@@ -1,0 +1,12 @@
+.git
+.github
+.env
+.env.*
+**/.env
+**/.env.*
+target
+.verification-target
+.verification-final
+local-only-db
+.tools
+*.log
